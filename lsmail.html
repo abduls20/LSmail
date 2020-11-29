@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lee Square Mail App</title>
+<!--My favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--end My favicon -->
+<style>
+.center {
+  text-align: center;	
+  margin: auto;
+  width: 60%;
+  border: 7px groove black;
+  padding: 10px;
+  background-color: #E040FB;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+</head>
+
+<!-- My css -->
+<link rel="stylesheet" href="css/main.css" type="text/css">
+
+<body>
+	
+<div class="center">
+  <!--<div id="vue"> -->
+  	 
+    <!-- Any text within {{}} inside this 'vue' div will be replaced with the -->
+    <!-- value of that variable in the Vue data object within main.js -->
+    <h1 style="padding-top:20px">Lee Square Mail</h1>
+    
+    <img src="mailgif.gif" alt="gifimg" style="width:40%">
+   <!-- <img src="https://www.southbaybyjackie.com/wp-content/uploads/2020/07/Mail.jpg" alt="mail"  style="width:40%">
+    -->
+    <br>
+
+    <h4>
+     <script> document.write(new Date().toDateString()); </script>
+     </h4>
+
+<div id="vue">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    To check if mail is here hit go!
+    <div class="">
+     <!-- <input type="text" v-model="thingName" name="" value="" placeholder="Enter Dweet Thing Name">  -->
+      <button  type="button" v-on:click="startDweet" name="button">{{buttonText}}</button>
+      <h3>Status: {{status}}</h3>
+    </div>
+    <div id="data-view" class="">
+      <h1> {{dweet.status}} </h1>	
+      
+    <br>
+    <br>
+    </div>
+  </div>
+ </div> 
+</body>
+
+<!-- Includes -->
+<!-- Vue -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.2.0/vue-resource.js"></script>
+<!-- My Script -->
+<script type='text/javascript' src="scripts/main.js" charset="utf-8"></script>
+
+</html>
